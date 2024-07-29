@@ -1,0 +1,45 @@
+.input-label {
+    font-size: var(--font-size-xs);
+    line-height: 100%;
+    margin-bottom: 4px;
+}
+    
+.input-custom {
+  position: relative;
+  transition: all 0.5s ease-in;
+
+  .input {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    padding: 4px 10px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    border: 1px solid #6d6d6d;
+    border-radius: 5px;
+    
+    &_textarea {
+      resize: none;
+      height: 58px;
+    }
+    &::placeholder {
+      color: var(--text-inactive-color);
+    }
+
+    &.focused,
+    &.active {
+      outline: none;
+    }
+
+  }
+  .error {
+    border: 1px solid var(--error-color)
+  }
+}
+
+.input-error{
+  margin-top: 5px;
+  font-size: var(--font-size-xs);
+  color: var(--error-color);
+}
+    

@@ -1,0 +1,47 @@
+.button{
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-xs);
+    transition: all 0.1s ease-in;
+    width: fit-content;
+    box-shadow: none;
+    padding: 0 3.7px;
+    border-radius: 5px;
+    color: var(--text-color-alternative);
+    width: 32.6px;
+
+    // Types
+    &_add {
+        font-size: var(--font-size);
+        width: 100%;
+        background-color: var(--btn-color);
+        border: 1px solid #3384ce;
+        border-radius: 5px;
+        padding: 4px 13px;
+        &:hover {
+            background-color: rgb(142, 172, 248);
+        }
+    }
+    &_edit {
+        background-color: var(--btn-edit-color);
+        &:hover {
+            background-color: #2bbefd;
+        }
+    }
+    &_del {
+        background-color: var(--btn-del-color);
+        &:hover {
+            background-color: #da5d74;
+        }
+    }
+    &:active {
+        scale: 0.9;
+        opacity: 1;
+    }
+}

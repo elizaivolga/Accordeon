@@ -1,0 +1,34 @@
+@import './vendor/colors.scss';
+@import './vendor/fonts.scss';
+
+:root {
+    // Text
+    --text-color: #{$black};
+    --text-color-alternative: #{$white};
+    --text-inactive-color: #{$gray-two};
+    --link: #{$blue};
+
+    // Fonts
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+
+    --font-size: 14px;
+    --font-size-xs: 12px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-extra-xl: 24px;
+    --font-size-xxl: 36px;
+    --font-size-extra-xxl: 40px;
+
+    --font-family: "Inter", sans-serif;
+
+    // Background
+    --bg-color: #{$gray};
+    --box-color: #{$white};
+    --box-header-color: #{$blue};
+    --btn-color: #{$light-blue};
+    --btn-edit-color: #{$blue-two};
+    --btn-del-color: #{$red};
+    --error-color: #{$red};
+}
